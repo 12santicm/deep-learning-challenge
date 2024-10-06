@@ -27,15 +27,15 @@ The purpose of this analysis is to evaluate the factors contributing to the succ
 
   * The final model uses a 4-layers, which includes:
 
-     Input Layer
-     Three Hidden Layers
-     Output Layer
+     Input Layer,
+     Three Hidden Layers,
+     Output Layer,
 
   * Number of Neurons:
 
-     Layer 1: 100 neurons
-     Layer 2: 50 neurons
-     Layer 3: 20 neurons
+     Layer 1: 100 neurons - 
+     Layer 2: 50 neurons - 
+     Layer 3: 20 neurons - 
      Output Layer: 1 neuron (for binary classification)
 
 
@@ -68,7 +68,7 @@ The purpose of this analysis is to evaluate the factors contributing to the succ
 
    2. For the second attempt to improve the model, more layers were added, resulting in:
 
-   
+
      - 100 - 150
      - 50 - 100
      - 50
