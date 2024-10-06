@@ -19,7 +19,7 @@ The purpose of this analysis is to evaluate the factors contributing to the succ
   - ``ASK_AMT``: Amount of funding requested by the organization.
 
  * Unnecessary variables:
-  - ``EIN`` ``NAME``: Identification columns 
+  - ``EIN`` and ``NAME``: Identification columns 
 
 **Compiling, Training, and Evaluating the Model**
 
@@ -27,34 +27,36 @@ The purpose of this analysis is to evaluate the factors contributing to the succ
 
   * The final model uses a 4-layers, which includes:
 
-   - Input Layer
-   - Three Hidden Layers
-   - Output Layer
+     Input Layer
+     Three Hidden Layers
+     Output Layer
 
   * Number of Neurons:
 
-   - Layer 1: 100 neurons
-   - Layer 2: 50 neurons
-   - Layer 3: 20 neurons
-   - Output Layer: 1 neuron (for binary classification)
+     Layer 1: 100 neurons
+     Layer 2: 50 neurons
+     Layer 3: 20 neurons
+     Output Layer: 1 neuron (for binary classification)
 
 
   * Activation Functions:
 
-   - The hidden layers use the ReLU (Rectified Linear Unit) activation function.
-   - Reason: ReLU is commonly used for hidden layers because it helps mitigate the vanishing gradient problem, allows for  faster computation, and provides good performance in deep neural networks.
+     The hidden layers use the ReLU (Rectified Linear Unit) activation function.
+     Reason: ReLU is commonly used for hidden layers because it helps mitigate the vanishing gradient problem, allows for  faster computation, and provides good performance in deep neural networks.
 
-   - Output Layer: The output layer uses the Sigmoid activation function.
-   - Reason: Sigmoid is ideal for binary classification problems, as it outputs a probability value between 0 and 1, which can be interpreted as the likelihood of a successful funding application.
+     Output Layer: The output layer uses the Sigmoid activation function.
+     Reason: Sigmoid is ideal for binary classification problems, as it outputs a probability value between 0 and 1, which can be interpreted as the likelihood of a successful funding application.
 
   * This configuration:
 
-   - The chosen number of neurons and layers allows the model to learn complex patterns in the data without overfitting.
-   - Using ReLU activation functions in the hidden layers allows the model to learn efficiently without suffering from the vanishing gradient problem.
+     The chosen number of neurons and layers allows the model to learn complex patterns in the data without overfitting.
+     Using ReLU activation functions in the hidden layers allows the model to learn efficiently without suffering from the vanishing gradient problem.
 
-   Attempts to improved the model performance:
+
+   * Attempts to improved the model performance:
 
    1. For the first attempt to improve the original model (Started_Code.ipynb, accuracy: 0.72434401512146), one more layer was added, resulting in:
+
      - 80 - 100
      - 30 - 50
      - 20
@@ -62,9 +64,11 @@ The purpose of this analysis is to evaluate the factors contributing to the succ
      More epochs were added:
      -  3 - 10
 
-     **Result:** The result of this model was an accuracy of 0.7284256815910339
+     *Result*: The result of this model was an accuracy of 0.7284256815910339
 
    2. For the second attempt to improve the model, more layers were added, resulting in:
+
+   
      - 100 - 150
      - 50 - 100
      - 50
@@ -73,16 +77,18 @@ The purpose of this analysis is to evaluate the factors contributing to the succ
      More epochs were added:
      -  10 - 30
 
-     **Result:** The result of this model was an accuracy of 0.7276967763900757
+     *Result*: The result of this model was an accuracy of 0.7276967763900757
 
    3. For the last attempt to improve the model, the activation funtion was changed, as well as changing the classification and application number of bins:
+
+
      - New activation function ``tanh``
 
      - Changed of bins
         Classification from 1800 to 2000
         Application fron 500 to 1000
 
-      **Result:** The result of this model was an accuracy of 0.7258017659187317   
+      *Result*: The result of this model was an accuracy of 0.7258017659187317   
 
 ## Summary: 
 
